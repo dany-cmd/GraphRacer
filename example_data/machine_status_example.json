@@ -16,7 +16,7 @@
                 "visited stations": [],
                 "status": "processing/awaiting",
                 "current total time passed": 0,
-                "manufacuting fault": "False",
+                "manufacturing fault": "False",
                 "time in station (> avg * tolerance)": "False",
                 "expecting in station > X hours": "False",
                 "station skipped": "False",
