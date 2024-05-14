@@ -3,8 +3,10 @@
         "MachineName": "",
         "StationNumber": 0,
         "avg_throughput_time": 0,
-        "number of pallet warnings": 0,
-        "number of pallet errors": 0,
+        "number of warnings": 0,
+        "number of errors": 0,
+        "number of pallets with warnings": 0,
+        "number of pallets with errors": 0,
         "number of pallets without qr code": 0,
         "pallets": [
             {
