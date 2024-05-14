@@ -3,8 +3,8 @@
         "MachineName": "",
         "StationNumber": 0,
         "avg_throughput_time": 0,
-        "any warning pallet?": "False",
-        "any red alert pallet?": "False",
+        "number of pallet warnings": 0,
+        "number of pallet errors": 0,
         "pallets": [
             {
                 "order_id": 0,
