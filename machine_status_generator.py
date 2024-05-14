@@ -1,5 +1,6 @@
 import datetime
 import pandas as pd
+import json
 
 class MachineStatusGenerator:
 
@@ -44,7 +45,9 @@ class MachineStatusGenerator:
                 for i in range(len(self.status)):
                     if self.status[i]["StationNumber"] == pallet["station"]:
                         self.status[i]["pallets"][pallet["order_id"]] =  {"pallet_id": pallet["order_id"]}
-            print(self.status)
+            
+            with open(self.OUTPUT_DATA_PATH + '_' + self.START_TIME.strftime("%H%M%S") + '_' + current_time_step_end.strftime("%H%M%S") + '.json', 'w') as f:
+                json.dump(self.status, f)
             self.START_TIME = current_time_step_end
         return
 
