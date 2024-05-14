@@ -1,0 +1,25 @@
+{
+    "station1": {
+        "MachineName": "",
+        "StationNumber": 0,
+        "avg_throughput_time": 0,
+        "any warning pallet?": "False",
+        "any red alert pallet?": "False",
+        "pallets": [
+            {
+                "order_id": 0,
+                "pallet_id": 0,
+                "in station since": 0,
+                "needed stations": [1,2,3,4],
+                "current total time passed": 0,
+                "expecting in station since": 0,
+                "manufacuting fault": "False",
+                "time in station (> avg * leeway)": "False",
+                "expecting in station > X hours": "False"
+            }
+        ]
+    },
+    "station2": {},
+    "station3": {},
+    "station4": {}
+}
