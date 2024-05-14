@@ -1,1 +1,5 @@
 output_data
+venv/
+test2.json
+.$GraphRacer.drawio.dtmp
+.$GraphRacer.drawio.bkp
