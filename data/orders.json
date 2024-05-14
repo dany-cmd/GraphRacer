@@ -1,0 +1,38 @@
+[
+    {
+        "order_id": "A_2663577",
+        "manufacturer": "Schaeffler",
+        "product": "Axial Bearings",
+        "quantity": 100,
+        "steps": ["Milling", "Polishing", "Assembly", "Conservation"],
+        "destination": "Shanghai Windturbines Ltd.",
+        "throughput_time(hh:mm:ss)": "00:04:00"
+    },
+    {
+        "order_id": "B_2663588",
+        "manufacturer": "Schaeffler",
+        "product": "Axial Bearings",
+        "quantity": 50,
+        "steps": ["Milling", "Polishing", "Assembly"],
+        "destination": "Schaeffler Plant IWS Herzogenaurach 2",
+        "throughput_time(hh:mm:ss)": "00:03:00"
+    },
+    {
+        "order_id": "C_2663599",
+        "manufacturer": "Schaeffler",
+        "product": "Roller Bearings",
+        "quantity": 75,
+        "steps": ["Milling", "Polishing", "Assembly", "Conservation"],
+        "destination": "Shanghai Windturbines Ltd.",
+        "throughput_time(hh:mm:ss)": "00:03:00" 
+    },
+    {
+        "order_id": "D_2663612",
+        "manufacturer": "Schaeffler",
+        "product": "Plain Bearings",
+        "quantity": 120,
+        "steps": ["Milling", "Polishing", "Assembly", "Conservation"],
+        "destination": "Schaeffler Plant IWS Herzogenaurach 3",
+        "throughput_time(hh:mm:ss)": "00:03:00"
+    }
+]
