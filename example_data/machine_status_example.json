@@ -14,11 +14,11 @@
                 "in station since": 0,
                 "needed stations": [1,2,3,4],
                 "visited stations": [],
-                "status": "processing/awaiting",
-                "current total time passed": 0,
+                "status": "awaiting/processing",
+                "cumulative throughput time": 0,
                 "manufacturing fault": "False",
-                "time in station (> avg * tolerance)": "False",
                 "expecting in station > X hours": "False",
+                "time in station (> avg * tolerance)": "False",
                 "station skipped": "False",
                 "throughput time too low": "False"
             }
