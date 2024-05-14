@@ -29,7 +29,10 @@ class MachineStatusGenerator:
                              "avg_throughput_time": machine["avg_throughput_time(hh:mm:ss)"],
                              "num_warnings": 0,
                              "num_errors": 0,
-                             "pallets": []})
+                             "num_pallets_with_warnings": 0,
+                             "num_pallets_with_errors": 0,
+                             "num_pallets_without_qr_code": 0,
+                             "pallets": {}})
         return machines
 
     def generate_machine_status_per_time_step(self):
@@ -40,8 +43,7 @@ class MachineStatusGenerator:
             for index, pallet in current_active_pallets.iterrows():
                 for i in range(len(self.status)):
                     if self.status[i]["StationNumber"] == pallet["station"]:
-                        self.status[i]["pallets"].append({"order_id": pallet["order_id"],
-                                                     "pallet_id": pallet["order_id"]})
+                        self.status[i]["pallets"][pallet["order_id"]] =  {"pallet_id": pallet["order_id"]}
             print(self.status)
             self.START_TIME = current_time_step_end
         return
