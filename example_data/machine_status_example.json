@@ -12,6 +12,7 @@
                 "expecting in station since": 0,
                 "in station since": 0,
                 "needed stations": [1,2,3,4],
+                "visited stations": [],
                 "status": "processing/awaiting",
                 "current total time passed": 0,
                 "manufacuting fault": "False",
