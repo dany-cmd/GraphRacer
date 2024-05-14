@@ -1,0 +1,22 @@
+[
+    {
+        "avg_throughput_time(hh:mm:ss)": "00:00:15",
+        "MachineName": "Milling",
+        "StationNumber": 1
+    },
+    {
+        "MachineName": "Polishing",
+        "avg_throughput_time(hh:mm:ss)" :"00:00:20",
+        "StationNumber": 2
+    },
+    {
+        "MachineName": "Assembly",
+        "avg_throughput_time(hh:mm:ss)": "00:00:45",
+        "StationNumber": 3
+    },
+    {
+        "MachineName":"Conservation",
+        "avg_throughput_time(hh:mm:ss)":"00:00:55",
+        "StationNumber": 4
+    }
+]
