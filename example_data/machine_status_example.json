@@ -16,7 +16,7 @@
                 "status": "processing/awaiting",
                 "current total time passed": 0,
                 "manufacuting fault": "False",
-                "time in station (> avg * leeway)": "False",
+                "time in station (> avg * tolerance)": "False",
                 "expecting in station > X hours": "False",
                 "qr code missing": "False",
                 "station skipped": "False"
