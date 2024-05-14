@@ -22,6 +22,8 @@ class MachineStatusGenerator:
         self.START_TIME = datetime.datetime.strptime("00:00:00", '%H:%M:%S')
         self.END_TIME = datetime.datetime.strptime("00:04:00", '%H:%M:%S')
 
+        self.current_start_time = self.START_TIME
+
         self.prev_start_time = None
         self.prev_end_time = None
 
@@ -45,16 +47,16 @@ class MachineStatusGenerator:
         return machines
 
     def generate_machine_status_per_time_step(self):
-        while self.START_TIME < self.END_TIME:
-            current_time_step_end = self.START_TIME + datetime.timedelta(seconds=10)
-            time_stamp = self.START_TIME.strftime("%H:%M:%S") + '-' + current_time_step_end.strftime("%H:%M:%S")
+        while self.current_start_time < self.END_TIME:
+            self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
+            time_stamp = self.current_start_time.strftime("%H:%M:%S") + '-' + self.current_time_step_end.strftime("%H:%M:%S")
             self.status[time_stamp] = copy.deepcopy(self.machines)
-            print(self.START_TIME.strftime("%H:%M:%S"), " ", current_time_step_end.strftime("%H:%M:%S"))
-            self.add_pallets_to_status(current_time_step_end, time_stamp)
+            print(self.current_start_time.strftime("%H:%M:%S"), " ", self.current_time_step_end.strftime("%H:%M:%S"))
+            self.add_pallets_to_status(self.current_time_step_end, time_stamp)
             
-            self.prev_start_time = self.START_TIME
-            self.prev_end_time = current_time_step_end
-            self.START_TIME = current_time_step_end
+            self.prev_start_time = self.current_start_time
+            self.prev_end_time = self.current_time_step_end
+            self.current_start_time = self.current_time_step_end
         self.write_status_to_file()
     
     def add_pallets_to_status(self, current_time_step_end, time_stamp):
