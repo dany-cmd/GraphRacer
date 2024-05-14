@@ -1,6 +1,7 @@
 import datetime
 import pandas as pd
 import json
+import copy
 
 class MachineStatusGenerator:
 
@@ -16,6 +17,7 @@ class MachineStatusGenerator:
         self.TRACKING_DATA = pd.read_json(self.TRACKING_DATA_PATH)
         self.TRACKING_DATA["StartTime"] = pd.to_datetime(self.TRACKING_DATA["StartTime"], format='%H:%M:%S')
         self.TRACKING_DATA["EndTime"] = pd.to_datetime(self.TRACKING_DATA["EndTime"], format='%H:%M:%S')
+        self.station_number_name_mapping = {1: "Milling", 2: "Polishing", 3: "Assembly", 4: "Conservation"}
 
         self.START_TIME = datetime.datetime.strptime("00:00:00", '%H:%M:%S')
         self.END_TIME = datetime.datetime.strptime("00:04:00", '%H:%M:%S')
@@ -25,11 +27,13 @@ class MachineStatusGenerator:
 
         self.machines = self.build_init_machine_status()
         self.status = {}
+        self.data_to_add = []
+        self.test_status = {}
     
     def build_init_machine_status(self):
-        machines = []
+        machines = {}
         for index, machine in self.MACHINE_DATA.iterrows():
-            machines.append({"MachineName": machine["MachineName"],
+            machines[machine["MachineName"]] = {
                              "StationNumber": machine["StationNumber"],
                              "avg_throughput_time": machine["avg_throughput_time(hh:mm:ss)"],
                              "num_warnings": 0,
@@ -37,17 +41,15 @@ class MachineStatusGenerator:
                              "num_pallets_with_warnings": 0,
                              "num_pallets_with_errors": 0,
                              "num_pallets_without_qr_code": 0,
-                             "pallets": {}})
+                             "pallets": {}}
         return machines
 
     def generate_machine_status_per_time_step(self):
         while self.START_TIME < self.END_TIME:
             current_time_step_end = self.START_TIME + datetime.timedelta(seconds=10)
             time_stamp = self.START_TIME.strftime("%H:%M:%S") + '-' + current_time_step_end.strftime("%H:%M:%S")
-            self.status[time_stamp] = self.machines
+            self.status[time_stamp] = copy.deepcopy(self.machines)
             print(self.START_TIME.strftime("%H:%M:%S"), " ", current_time_step_end.strftime("%H:%M:%S"))
-            if self.prev_end_time and self.prev_start_time:
-                self.remove_pallets_from_status()
             self.add_pallets_to_status(current_time_step_end, time_stamp)
             
             self.prev_start_time = self.START_TIME
@@ -55,25 +57,31 @@ class MachineStatusGenerator:
             self.START_TIME = current_time_step_end
         self.write_status_to_file()
     
-    def remove_pallets_from_status(self):
-        removed_pallets = []
-
-        return removed_pallets
-    
     def add_pallets_to_status(self, current_time_step_end, time_stamp):
         current_active_pallets = self.get_filtered_tracking_status(self.START_TIME, current_time_step_end)
-        for index, pallet in current_active_pallets.iterrows():
-            for i in range(len(self.status[time_stamp])):
-                if self.status[time_stamp][i]["StationNumber"] == pallet["station"]:
-                    print(pallet)
-                    self.status[time_stamp][i]["pallets"][pallet["order_id"]] = {"pallet_id": pallet["order_id"],
-                                                                        "in_station_since": str(pallet["StartTime"])}
+        for i, pallet in current_active_pallets.iterrows():
+            steps = []
+            for i, order in self.ORDERS_DATA.iterrows():
+                if order["order_id"] == pallet["order_id"]:
+                    steps = order["steps"]
+            self.status[time_stamp][self.station_number_name_mapping[pallet["station"]]]["pallets"][pallet["order_id"]] = {"pallet_id": pallet["order_id"],
+                                                                                                                           "expecting_in_station": 0,
+                                                                                                                           "in_station_since": str(pallet["StartTime"]),
+                                                                                                                           "needed_stations": steps,
+                                                                                                                           "visited_stations": [],
+                                                                                                                           "status": "processing",
+                                                                                                                           "cumulative_throughput_time": 0,
+                                                                                                                           "expecting_too_long": False,
+                                                                                                                           "too_long_in_station": False,
+                                                                                                                           "station_skipped": False,
+                                                                                                                           "throughput_time_too_low": False}
+                
     def write_status_to_file(self):
         with open(self.OUTPUT_DATA_PATH, 'w') as f:
                 json.dump(self.status, f)
 
     def get_filtered_tracking_status(self, start, end):
-        mask = (start < self.TRACKING_DATA["StartTime"]) & (self.TRACKING_DATA["StartTime"] <= end) & (self.TRACKING_DATA["EndTime"] >= end)
+        mask = ((start < self.TRACKING_DATA["StartTime"]) & (self.TRACKING_DATA["StartTime"] <= end)) | ((start < self.TRACKING_DATA["EndTime"]) & (self.TRACKING_DATA["EndTime"] <= end))
         return self.TRACKING_DATA.loc[mask]
     
     def check_all_pallets_unique_in_all_stations(self):
