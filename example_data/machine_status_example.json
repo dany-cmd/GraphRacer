@@ -19,7 +19,8 @@
                 "time in station (> avg * tolerance)": "False",
                 "expecting in station > X hours": "False",
                 "qr code missing": "False",
-                "station skipped": "False"
+                "station skipped": "False",
+                "throughput time too low": "False"
             }
         ]
     },
