@@ -1,31 +1,1419 @@
 {
-    "station1": {
-        "MachineName": "",
-        "StationNumber": 0,
-        "avg_throughput_time": 0,
-        "num_warnings": 0,
-        "num_errors": 0,
-        "num_pallets_with_warnings": 0,
-        "num_pallets_with_errors": 0,
-        "num_pallets_without_qr_code": 0,
-        "pallets":{
-            "order_id": {
-                "pallet_id": 0,
-                "expecting in station since": 0,
-                "in_station_since": 0,
-                "needed stations": [1,2,3,4],
-                "visited stations": [],
-                "status": "awaiting/processing",
-                "cumulative throughput time": 0,
-                "manufacturing fault": "False",
-                "expecting in station > X hours": "False",
-                "time in station (> avg * tolerance)": "False",
-                "station skipped": "False",
-                "throughput time too low": "False"
+    "00:00:00-00:00:10": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:04",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:00:10-00:00:20": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:04",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:00:20-00:00:30": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:29",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:26",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:00:30-00:00:40": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "C_2663599": {
+                    "pallet_id": "C_2663599",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:31",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:00:40-00:00:50": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:29",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                },
+                "C_2663599": {
+                    "pallet_id": "C_2663599",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:31",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:00:50-00:01:00": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "C_2663599": {
+                    "pallet_id": "C_2663599",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:58",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:57",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:01:00-00:01:10": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "D_2663612": {
+                    "pallet_id": "D_2663612",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:01",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:02",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:01:10-00:01:20": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:01:20-00:01:30": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:02",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:01:30-00:01:40": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "D_2663612": {
+                    "pallet_id": "D_2663612",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:01",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:57",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:01:40-00:01:50": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:44",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:45",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
             }
         }
     },
-    "station2": {},
-    "station3": {},
-    "station4": {}
+    "00:01:50-00:02:00": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "C_2663599": {
+                    "pallet_id": "C_2663599",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:00:58",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:02:00-00:02:10": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:02:10-00:02:20": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:02:20-00:02:30": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:02:30-00:02:40": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:02:40-00:02:50": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:44",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "A_2663577": {
+                    "pallet_id": "A_2663577",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:01:45",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        }
+    },
+    "00:02:50-00:03:00": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:03:00-00:03:10": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "D_2663612": {
+                    "pallet_id": "D_2663612",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:03:03",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly",
+                        "Conservation"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        }
+    },
+    "00:03:10-00:03:20": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:03:13",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        }
+    },
+    "00:03:20-00:03:30": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {
+                "B_2663588": {
+                    "pallet_id": "B_2663588",
+                    "expecting_in_station": 0,
+                    "in_station_since": "1900-01-01 00:03:13",
+                    "needed_stations": [
+                        "Milling",
+                        "Polishing",
+                        "Assembly"
+                    ],
+                    "visited_stations": [],
+                    "status": "processing",
+                    "cumulative_throughput_time": 0,
+                    "expecting_too_long": false,
+                    "too_long_in_station": false,
+                    "station_skipped": false,
+                    "throughput_time_too_low": false
+                }
+            }
+        }
+    },
+    "00:03:30-00:03:40": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:03:40-00:03:50": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    },
+    "00:03:50-00:04:00": {
+        "Milling": {
+            "StationNumber": 1,
+            "avg_throughput_time": "00:00:15",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Polishing": {
+            "StationNumber": 2,
+            "avg_throughput_time": "00:00:20",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Assembly": {
+            "StationNumber": 3,
+            "avg_throughput_time": "00:00:45",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        },
+        "Conservation": {
+            "StationNumber": 4,
+            "avg_throughput_time": "00:00:55",
+            "num_warnings": 0,
+            "num_errors": 0,
+            "num_pallets_with_warnings": 0,
+            "num_pallets_with_errors": 0,
+            "num_pallets_without_qr_code": 0,
+            "pallets": {}
+        }
+    }
 }
