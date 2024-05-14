@@ -5,6 +5,7 @@
         "avg_throughput_time": 0,
         "number of pallet warnings": 0,
         "number of pallet errors": 0,
+        "number of pallets without qr code": 0,
         "pallets": [
             {
                 "order_id": 0,
@@ -18,7 +19,6 @@
                 "manufacuting fault": "False",
                 "time in station (> avg * tolerance)": "False",
                 "expecting in station > X hours": "False",
-                "qr code missing": "False",
                 "station skipped": "False",
                 "throughput time too low": "False"
             }
