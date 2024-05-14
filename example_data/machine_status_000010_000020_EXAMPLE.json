@@ -1,0 +1,61 @@
+[
+    {
+        "MachineName": "Milling",
+        "StationNumber": 1,
+        "avg_throughput_time": "00:00:15",
+        "num_warnings": 0,
+        "num_errors": 0,
+        "num_pallets_with_warnings": 0,
+        "num_pallets_with_errors": 0,
+        "num_pallets_without_qr_code": 0,
+        "pallets": {
+            "A_2663577": {
+                "pallet_id": "A_2663577",
+                "expecting in station since": 0,
+                "in_station_since": "00:00:26",
+                "needed stations": [1,2,3,4],
+                "visited stations": [],
+                "status": "processing",
+                "cumulative throughput time": 0,
+                "manufacturing fault": "False",
+                "expecting in station > X hours": "False",
+                "time in station (> avg * tolerance)": "False",
+                "station skipped": "False",
+                "throughput time too low": "False"
+            }
+        }
+    },
+    {
+        "MachineName": "Polishing",
+        "StationNumber": 2,
+        "avg_throughput_time": "00:00:20",
+        "num_warnings": 0,
+        "num_errors": 0,
+        "num_pallets_with_warnings": 0,
+        "num_pallets_with_errors": 0,
+        "num_pallets_without_qr_code": 0,
+        "pallets": {}
+    },
+    {
+        "MachineName": "Assembly",
+        "StationNumber": 3,
+        "avg_throughput_time": "00:00:45",
+        "num_warnings": 0,
+        "num_errors": 0,
+        "num_pallets_with_warnings": 0,
+        "num_pallets_with_errors": 0,
+        "num_pallets_without_qr_code": 0,
+        "pallets": {}
+    },
+    {
+        "MachineName": "Conservation",
+        "StationNumber": 4,
+        "avg_throughput_time": "00:00:55",
+        "num_warnings": 0,
+        "num_errors": 0,
+        "num_pallets_with_warnings": 0,
+        "num_pallets_with_errors": 0,
+        "num_pallets_without_qr_code": 0,
+        "pallets": {}
+    }
+]
