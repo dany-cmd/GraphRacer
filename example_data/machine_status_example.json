@@ -3,14 +3,13 @@
         "MachineName": "",
         "StationNumber": 0,
         "avg_throughput_time": 0,
-        "number of warnings": 0,
-        "number of errors": 0,
-        "number of pallets with warnings": 0,
-        "number of pallets with errors": 0,
-        "number of pallets without qr code": 0,
-        "pallets": [
-            {
-                "order_id": 0,
+        "num_warnings": 0,
+        "num_errors": 0,
+        "num_pallets_with_warnings": 0,
+        "num_pallets_with_errors": 0,
+        "num_pallets_without_qr_code": 0,
+        "pallets":{
+            "order_id": {
                 "pallet_id": 0,
                 "expecting in station since": 0,
                 "in station since": 0,
@@ -24,7 +23,7 @@
                 "station skipped": "False",
                 "throughput time too low": "False"
             }
-        ]
+        }
     },
     "station2": {},
     "station3": {},
