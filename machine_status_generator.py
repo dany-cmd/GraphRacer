@@ -43,7 +43,7 @@ class MachineStatusGenerator:
     def generate_machine_status_per_time_step(self):
         while self.START_TIME < self.END_TIME:
             current_time_step_end = self.START_TIME + datetime.timedelta(seconds=10)
-            time_stamp = self.START_TIME.strftime("%H%M%S") + '_' + current_time_step_end.strftime("%H%M%S")
+            time_stamp = self.START_TIME.strftime("%H:%M:%S") + '-' + current_time_step_end.strftime("%H:%M:%S")
             self.status[time_stamp] = self.machines
             print(self.START_TIME.strftime("%H:%M:%S"), " ", current_time_step_end.strftime("%H:%M:%S"))
             if self.prev_end_time and self.prev_start_time:
