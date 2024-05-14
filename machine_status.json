@@ -11,6 +11,7 @@
                 "pallet_id": 0,
                 "in station since": 0,
                 "needed stations": [1,2,3,4],
+                "status": "processing/awaiting",
                 "current total time passed": 0,
                 "expecting in station since": 0,
                 "manufacuting fault": "False",
