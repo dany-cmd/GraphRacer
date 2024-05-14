@@ -9,15 +9,16 @@
             {
                 "order_id": 0,
                 "pallet_id": 0,
+                "expecting in station since": 0,
                 "in station since": 0,
                 "needed stations": [1,2,3,4],
                 "status": "processing/awaiting",
                 "current total time passed": 0,
-                "expecting in station since": 0,
                 "manufacuting fault": "False",
                 "time in station (> avg * leeway)": "False",
                 "expecting in station > X hours": "False",
-                "qr code missing": "False"
+                "qr code missing": "False",
+                "station skipped": "False"
             }
         ]
     },
