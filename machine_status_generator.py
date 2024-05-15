@@ -44,7 +44,6 @@ class MachineStatusGenerator:
                              "num_errors": 0,
                              "num_pallets_with_warnings": 0,
                              "num_pallets_with_errors": 0,
-                             "num_pallets_without_qr_code": 0,
                              "pallets": {}}
         return machines
 
@@ -71,10 +70,8 @@ class MachineStatusGenerator:
                                                                                                                            "expecting_in_station": 0,
                                                                                                                            "in_station_since": str(pallet["StartTime"]),
                                                                                                                            "needed_stations": steps,
-                                                                                                                           "visited_stations": [],
                                                                                                                            "status": "processing",
                                                                                                                            "cumulative_throughput_time": 0,
-                                                                                                                           "expecting_too_long": False,
                                                                                                                            "too_long_in_station": False,
                                                                                                                            "station_skipped": False,
                                                                                                                            "throughput_time_too_low": False}
