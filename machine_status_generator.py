@@ -62,10 +62,8 @@ class MachineStatusGenerator:
     def add_pallets_to_status(self, current_time_step_end, time_stamp):
         current_active_pallets = self.get_filtered_tracking_status(self.current_start_time, current_time_step_end)
         for i, pallet in current_active_pallets.iterrows():
-            steps = []
-            for i, order in self.ORDERS_DATA.iterrows():
-                if order["order_id"] == pallet["order_id"]:
-                    steps = order["steps"]
+            steps = self.get_steps_for_order(pallet["order_id"])
+            print(pallet["order_id"])
             self.status[time_stamp][self.station_number_name_mapping[pallet["station"]]]["pallets"][pallet["order_id"]] = {"pallet_id": pallet["order_id"],
                                                                                                                            "expecting_in_station": 0,
                                                                                                                            "in_station_since": str(pallet["StartTime"]),
@@ -76,6 +74,13 @@ class MachineStatusGenerator:
                                                                                                                            "station_skipped": False,
                                                                                                                            "throughput_time_too_low": False}
                 
+    def get_steps_for_order(self, pallet_id):
+        steps = []
+        for i, order in self.ORDERS_DATA.iterrows():
+            if order["order_id"] == pallet_id:
+                steps = order["steps"]
+        return steps
+    
     def detect_skipped_stations(self):
         self.current_start_time = self.START_TIME
         self.current_end_time = None
