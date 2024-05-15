@@ -62,15 +62,17 @@ class MachineStatusGenerator:
         current_active_pallets = self.get_filtered_tracking_status(self.current_start_time, current_time_step_end)
         for i, pallet in current_active_pallets.iterrows():
             steps = self.get_steps_for_order(pallet["order_id"])
+            print(pallet["StartTime"])
             self.status[time_stamp][self.station_number_name_mapping[pallet["station"]]]["pallets"][pallet["order_id"]] = {"pallet_id": pallet["order_id"],
-                                                                                                                           "expecting_in_station": 0,
-                                                                                                                           "in_station_since": str(pallet["StartTime"]),
+                                                                                                                           "expecting_in_station_since": None,
+                                                                                                                           "in_station_since": str(pallet["StartTime"]).split(" ")[-1],
                                                                                                                            "needed_stations": steps,
                                                                                                                            "status": "processing",
                                                                                                                            "too_long_in_station": False,
-                                                                                                                           "station_skipped": False,
-                                                                                                                           "throughput_time_too_low": False,
-                                                                                                                           "wrong_station": False}
+                                                                                                                           "too_short_in_station": False,
+                                                                                                                           "skipped_station": False,
+                                                                                                                           "wrong_station": False,
+                                                                                                                           "missing_qr_code": isinstance(pallet["order_id"], str)}
                 
     def get_steps_for_order(self, pallet_id):
         steps = []
@@ -97,7 +99,7 @@ class MachineStatusGenerator:
                     if station_number not in pallet_visited_stations[pallet_id]:
                         pallet_visited_stations[pallet_id].append(station_number)
                         if not self.check_increasing_number(pallet_visited_stations[pallet_id]):
-                            self.status[time_stamp][station_name]["pallets"][pallet_id]["station_skipped"] = True
+                            self.status[time_stamp][station_name]["pallets"][pallet_id]["skipped_station"] = True
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
@@ -164,14 +166,15 @@ class MachineStatusGenerator:
                     #add expecting pallet
                     steps = self.get_steps_for_order(pallet_id)
                     self.status[time_stamp][next_station_name]["pallets"][pallet_id] = {"pallet_id": pallet_id,
-                                                                                        "expecting_in_station": str(time_stamp),
-                                                                                        "in_station_since": 0,
+                                                                                        "expecting_in_station_since": str(time_stamp),
+                                                                                        "in_station_since": None,
                                                                                         "needed_stations": steps,
                                                                                         "status": "incoming",
                                                                                         "too_long_in_station": False,
-                                                                                        "station_skipped": False,
-                                                                                        "throughput_time_too_low": False,
-                                                                                        "wrong_station": False}
+                                                                                        "too_short_in_station": False,
+                                                                                        "skipped_station": False,
+                                                                                        "wrong_station": False,
+                                                                                        "missing_qr_code": isinstance(pallet_id, str)}
                 
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
@@ -192,12 +195,12 @@ class MachineStatusGenerator:
                     if self.status[time_stamp][station_name]["pallets"][pallet_id]["status"] != "processing":
                         continue
                     current_time = datetime.datetime.strptime(time_stamp.split("-")[0], self.TIME_FORMAT)
-                    processing_since = datetime.datetime.strptime(self.status[time_stamp][station_name]["pallets"][pallet_id]["in_station_since"].split(" ")[1], self.TIME_FORMAT)
+                    processing_since = datetime.datetime.strptime(self.status[time_stamp][station_name]["pallets"][pallet_id]["in_station_since"], self.TIME_FORMAT)
                     cum_processing_time = abs((current_time - processing_since).total_seconds())
                     over_avg_processing_time = int(cum_processing_time) > int(station_processing_time.split(":")[2])
                     under_avg_processing_time = int(cum_processing_time) + 10 < int(station_processing_time.split(":")[2])
                     self.status[time_stamp][station_name]["pallets"][pallet_id]["too_long_in_station"] = over_avg_processing_time
-                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time and self.current_start_time > processing_since
+                    self.status[time_stamp][station_name]["pallets"][pallet_id]["too_short_in_station"] = under_avg_processing_time and self.current_start_time > processing_since
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
@@ -214,7 +217,7 @@ class MachineStatusGenerator:
                 warningPalletCnt = 0
                 for p in station["pallets"].values():
                     palletWarningFlag = False
-                    if p["station_skipped"]:
+                    if p["skipped_station"]:
                         errCnt = errCnt + 1
                         errPalletCnt = errPalletCnt + 1
                     if p["wrong_station"]:
@@ -223,7 +226,7 @@ class MachineStatusGenerator:
                     if p["too_long_in_station"]:
                         warningCnt = warningCnt + 1
                         palletWarningFlag = True
-                    if p["throughput_time_too_low"]:
+                    if p["too_short_in_station"]:
                         warningCnt = warningCnt + 1
                         palletWarningFlag = True
                     if palletWarningFlag:  # count the pallet in the end
