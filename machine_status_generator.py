@@ -217,6 +217,9 @@ class MachineStatusGenerator:
                     if p["station_skipped"]:
                         errCnt = errCnt + 1
                         errPalletCnt = errPalletCnt + 1
+                    if p["wrong_station"]:
+                        errCnt = errCnt + 1
+                        errPalletCnt = errPalletCnt + 1
                     if p["too_long_in_station"]:
                         warningCnt = warningCnt + 1
                         palletWarningFlag = True
