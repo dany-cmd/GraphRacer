@@ -61,7 +61,7 @@ class MachineStatusGenerator:
             self.current_start_time = self.current_time_step_end
     
     def add_pallets_to_status(self, current_time_step_end, time_stamp):
-        current_active_pallets = self.get_filtered_tracking_status(self.START_TIME, current_time_step_end)
+        current_active_pallets = self.get_filtered_tracking_status(self.current_start_time, current_time_step_end)
         for i, pallet in current_active_pallets.iterrows():
             steps = []
             for i, order in self.ORDERS_DATA.iterrows():
