@@ -52,7 +52,6 @@ class MachineStatusGenerator:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
             time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
             self.status[time_stamp] = copy.deepcopy(self.machines)
-            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
             self.add_pallets_to_status(self.current_time_step_end, time_stamp)
             
             self.prev_start_time = self.current_start_time
@@ -63,7 +62,6 @@ class MachineStatusGenerator:
         current_active_pallets = self.get_filtered_tracking_status(self.current_start_time, current_time_step_end)
         for i, pallet in current_active_pallets.iterrows():
             steps = self.get_steps_for_order(pallet["order_id"])
-            print(pallet["order_id"])
             self.status[time_stamp][self.station_number_name_mapping[pallet["station"]]]["pallets"][pallet["order_id"]] = {"pallet_id": pallet["order_id"],
                                                                                                                            "expecting_in_station": 0,
                                                                                                                            "in_station_since": str(pallet["StartTime"]),
@@ -88,8 +86,7 @@ class MachineStatusGenerator:
         while self.current_start_time < self.END_TIME:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
             time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
-            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
-            
+
             for station_name in self.status[time_stamp].keys():
                 station_number = self.status[time_stamp][station_name]["StationNumber"]
                 for pallet_id in self.status[time_stamp][station_name]["pallets"].keys():
@@ -112,8 +109,7 @@ class MachineStatusGenerator:
         while self.current_start_time < self.END_TIME:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
             time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
-            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
-            
+
             for station_name in self.status[time_stamp].keys():
                 for pallet_id in self.status[time_stamp][station_name]["pallets"].keys():
                     if self.status[time_stamp][station_name]["pallets"][pallet_id]["status"] != "processing":
@@ -143,8 +139,7 @@ class MachineStatusGenerator:
         while self.current_start_time < self.END_TIME:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
             time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
-            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
-            
+
             #set initially seen station
             for station_name in self.status[time_stamp].keys():
                 station_number = self.status[time_stamp][station_name]["StationNumber"]
@@ -158,7 +153,6 @@ class MachineStatusGenerator:
                     continue
                 current_station_name = self.station_number_name_mapping[pallet_prev_station[pallet_id]]
                 if pallet_id in self.status[time_stamp][current_station_name]["pallets"].keys():
-                    print("skip " + pallet_id)
                     continue
                 next_station_number = pallet_prev_station[pallet_id] + 1
                 if next_station_number not in self.station_number_name_mapping:
@@ -190,8 +184,7 @@ class MachineStatusGenerator:
         while self.current_start_time < self.END_TIME:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
             time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
-            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
-            
+
             for station_name in self.status[time_stamp].keys():
                 station_processing_time = self.get_machine_processing_time(station_name)
 
