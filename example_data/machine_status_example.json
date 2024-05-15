@@ -278,7 +278,7 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
             "num_pallets_with_warnings": 0,
             "num_pallets_with_errors": 0,
@@ -311,7 +311,7 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "too_short_in_station": false,
+                    "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
                     "missing_qr_code": false
@@ -331,7 +331,7 @@
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
             "num_warnings": 0,
-            "num_errors": 0,
+            "num_errors": 1,
             "num_pallets_with_warnings": 0,
             "num_pallets_with_errors": 0,
             "pallets": {
@@ -349,7 +349,7 @@
                     "too_long_in_station": false,
                     "too_short_in_station": false,
                     "skipped_station": false,
-                    "wrong_station": false,
+                    "wrong_station": true,
                     "missing_qr_code": false
                 }
             }
@@ -1909,9 +1909,9 @@
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
             "num_warnings": 0,
-            "num_errors": 0,
+            "num_errors": 1,
             "num_pallets_with_warnings": 0,
-            "num_pallets_with_errors": 0,
+            "num_pallets_with_errors": 1,
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -2000,9 +2000,9 @@
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
             "num_warnings": 1,
-            "num_errors": 0,
+            "num_errors": 1,
             "num_pallets_with_warnings": 1,
-            "num_pallets_with_errors": 0,
+            "num_pallets_with_errors": 1,
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
