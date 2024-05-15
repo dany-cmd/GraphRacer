@@ -72,7 +72,7 @@ class MachineStatusGenerator:
                                                                                                                            "too_short_in_station": False,
                                                                                                                            "skipped_station": False,
                                                                                                                            "wrong_station": False,
-                                                                                                                           "missing_qr_code": isinstance(pallet["order_id"], str)}
+                                                                                                                           "missing_qr_code": not isinstance(pallet["order_id"], str)}
                 
     def get_steps_for_order(self, pallet_id):
         steps = []
@@ -174,7 +174,7 @@ class MachineStatusGenerator:
                                                                                         "too_short_in_station": False,
                                                                                         "skipped_station": False,
                                                                                         "wrong_station": False,
-                                                                                        "missing_qr_code": isinstance(pallet_id, str)}
+                                                                                        "missing_qr_code": not isinstance(pallet_id, str)}
                 
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
