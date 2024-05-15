@@ -193,6 +193,34 @@ class MachineStatusGenerator:
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
+
+    def ErrorWarningCounter(self):
+        # "num_pallets_without_qr_code" is omitted
+        for s in self.status.values():
+            for station in s.values():
+                # count the pallet attributes, and it's in dict type
+                errCnt = 0
+                errPalletCnt = 0
+                # difference: per pallet count, total flags
+                warningCnt = 0
+                warningPalletCnt = 0
+                for p in station["pallets"].values():
+                    palletWarningFlag = False
+                    if p["station_skipped"]:
+                        errCnt = errCnt + 1
+                        errPalletCnt = errPalletCnt + 1
+                    if p["too_long_in_station"]:
+                        warningCnt = warningCnt + 1
+                        palletWarningFlag = True
+                    if p["throughput_time_too_low"]:
+                        warningCnt = warningCnt + 1
+                        palletWarningFlag = True
+                    if palletWarningFlag:  # count the pallet in the end
+                        warningPalletCnt = warningPalletCnt + 1
+                station["num_warnings"] = warningCnt
+                station["num_errors"] = errCnt
+                station["num_pallets_with_warnings"] = warningPalletCnt
+                station["num_pallets_with_errors"] = errPalletCnt
     
     def get_machine_processing_time(self, name):
         for i, row in self.MACHINE_DATA.iterrows():
@@ -216,4 +244,5 @@ generator.generate_machine_status_per_time_step()
 generator.add_expecting_pallets()
 generator.detect_skipped_stations()
 generator.update_time_status()
+generator.ErrorWarningCounter()
 generator.write_status_to_file()
