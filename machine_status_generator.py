@@ -102,12 +102,29 @@ class MachineStatusGenerator:
                         pallet_visited_stations[pallet_id].append(station_number)
                         if not self.check_increasing_number(pallet_visited_stations[pallet_id]):
                             self.status[time_stamp][station_name]["pallets"][pallet_id]["station_skipped"] = True
-
-
-
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
+    
+    def detect_wrong_station(self):
+        self.current_start_time = self.START_TIME
+        self.current_end_time = None
+        pallet_visited_stations = {}
+        while self.current_start_time < self.END_TIME:
+            self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
+            time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
+            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
+            
+            for station_name in self.status[time_stamp].keys():
+                for pallet_id in self.status[time_stamp][station_name]["pallets"].keys():
+                    if self.status[time_stamp][station_name]["pallets"][pallet_id]["status"] != "processing":
+                        continue
+                    if station_name not in self.status[time_stamp][station_name]["pallets"][pallet_id]["needed_stations"]:
+                        self.status[time_stamp][station_name]["pallets"][pallet_id]["wrong_station"] = True
+            self.prev_start_time = self.current_start_time
+            self.prev_end_time = self.current_time_step_end
+            self.current_start_time = self.current_time_step_end
+    
 
     def check_increasing_number(self, arr):
         prev_num = None
@@ -187,9 +204,9 @@ class MachineStatusGenerator:
                     processing_since = datetime.datetime.strptime(self.status[time_stamp][station_name]["pallets"][pallet_id]["in_station_since"].split(" ")[1], self.TIME_FORMAT)
                     cum_processing_time = abs((current_time - processing_since).total_seconds())
                     over_avg_processing_time = int(cum_processing_time) > int(station_processing_time.split(":")[2])
-                    under_avg_processing_time = int(cum_processing_time) < int(station_processing_time.split(":")[2])
+                    under_avg_processing_time = int(cum_processing_time) + 10 < int(station_processing_time.split(":")[2])
                     self.status[time_stamp][station_name]["pallets"][pallet_id]["too_long_in_station"] = over_avg_processing_time
-                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time
+                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time #todo: fix this so that doesnt get flagged all the time
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
@@ -245,4 +262,5 @@ generator.add_expecting_pallets()
 generator.detect_skipped_stations()
 generator.update_time_status()
 generator.ErrorWarningCounter()
+generator.detect_wrong_station()
 generator.write_status_to_file()
