@@ -11,18 +11,20 @@ class MachineStatusGenerator:
         self.ORDERS_DATA_PATH = self.DATA_FOLDER + "/orders.json"
         self.TRACKING_DATA_PATH = self.DATA_FOLDER + "/trackingresults.json"
         self.OUTPUT_DATA_PATH = "./output_data/machine_status.json"
+        self.TIME_FORMAT = "%H:%M:%S"
 
         self.MACHINE_DATA = pd.read_json(self.MACHINE_DATA_PATH)
         self.ORDERS_DATA = pd.read_json(self.ORDERS_DATA_PATH)
         self.TRACKING_DATA = pd.read_json(self.TRACKING_DATA_PATH)
-        self.TRACKING_DATA["StartTime"] = pd.to_datetime(self.TRACKING_DATA["StartTime"], format='%H:%M:%S')
-        self.TRACKING_DATA["EndTime"] = pd.to_datetime(self.TRACKING_DATA["EndTime"], format='%H:%M:%S')
+        self.TRACKING_DATA["StartTime"] = pd.to_datetime(self.TRACKING_DATA["StartTime"], format=self.TIME_FORMAT)
+        self.TRACKING_DATA["EndTime"] = pd.to_datetime(self.TRACKING_DATA["EndTime"], format=self.TIME_FORMAT)
         self.station_number_name_mapping = {1: "Milling", 2: "Polishing", 3: "Assembly", 4: "Conservation"}
 
-        self.START_TIME = datetime.datetime.strptime("00:00:00", '%H:%M:%S')
-        self.END_TIME = datetime.datetime.strptime("00:04:00", '%H:%M:%S')
+        self.START_TIME = datetime.datetime.strptime("00:00:00", self.TIME_FORMAT)
+        self.END_TIME = datetime.datetime.strptime("00:04:00", self.TIME_FORMAT)
 
         self.current_start_time = self.START_TIME
+        self.current_end_time = None
 
         self.prev_start_time = None
         self.prev_end_time = None
@@ -49,15 +51,14 @@ class MachineStatusGenerator:
     def generate_machine_status_per_time_step(self):
         while self.current_start_time < self.END_TIME:
             self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
-            time_stamp = self.current_start_time.strftime("%H:%M:%S") + '-' + self.current_time_step_end.strftime("%H:%M:%S")
+            time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
             self.status[time_stamp] = copy.deepcopy(self.machines)
-            print(self.current_start_time.strftime("%H:%M:%S"), " ", self.current_time_step_end.strftime("%H:%M:%S"))
+            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
             self.add_pallets_to_status(self.current_time_step_end, time_stamp)
             
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
-        self.write_status_to_file()
     
     def add_pallets_to_status(self, current_time_step_end, time_stamp):
         current_active_pallets = self.get_filtered_tracking_status(self.START_TIME, current_time_step_end)
@@ -78,6 +79,42 @@ class MachineStatusGenerator:
                                                                                                                            "station_skipped": False,
                                                                                                                            "throughput_time_too_low": False}
                 
+    def detect_skipped_stations(self):
+        self.current_start_time = self.START_TIME
+        self.current_end_time = None
+        pallet_visited_stations = {}
+        while self.current_start_time < self.END_TIME:
+            self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
+            time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
+            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
+            
+            for station_name in self.status[time_stamp].keys():
+                station_number = self.status[time_stamp][station_name]["StationNumber"]
+                for pallet_id in self.status[time_stamp][station_name]["pallets"].keys():
+                    if self.status[time_stamp][station_name]["pallets"][pallet_id]["status"] != "processing":
+                        continue
+                    if pallet_id not in pallet_visited_stations.keys():
+                        pallet_visited_stations[pallet_id] = []
+                    if station_number not in pallet_visited_stations[pallet_id]:
+                        pallet_visited_stations[pallet_id].append(station_number)
+                        if not self.check_increasing_number(pallet_visited_stations[pallet_id]):
+                            self.status[time_stamp][station_name]["pallets"][pallet_id]["station_skipped"] = True
+
+
+
+            self.prev_start_time = self.current_start_time
+            self.prev_end_time = self.current_time_step_end
+            self.current_start_time = self.current_time_step_end
+
+    def check_increasing_number(self, arr):
+        prev_num = None
+        for num in arr:
+            if prev_num:
+                if num != prev_num + 1:
+                    return False
+            prev_num = num
+        return arr
+    
     def write_status_to_file(self):
         with open(self.OUTPUT_DATA_PATH, 'w') as f:
                 json.dump(self.status, f)
@@ -91,4 +128,5 @@ class MachineStatusGenerator:
 
 generator = MachineStatusGenerator()
 generator.generate_machine_status_per_time_step()
-
+generator.detect_skipped_stations()
+generator.write_status_to_file()
