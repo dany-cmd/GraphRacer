@@ -204,7 +204,7 @@ class MachineStatusGenerator:
                     over_avg_processing_time = int(cum_processing_time) > int(station_processing_time.split(":")[2])
                     under_avg_processing_time = int(cum_processing_time) + 10 < int(station_processing_time.split(":")[2])
                     self.status[time_stamp][station_name]["pallets"][pallet_id]["too_long_in_station"] = over_avg_processing_time
-                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time #todo: fix this so that doesnt get flagged all the time
+                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time and self.current_start_time > processing_since
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
