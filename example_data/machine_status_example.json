@@ -23,7 +23,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -79,7 +79,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -134,7 +134,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -161,7 +161,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -207,7 +207,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -224,7 +224,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -260,7 +260,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -297,7 +297,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -314,7 +314,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -350,7 +350,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -397,7 +397,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -413,7 +413,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -440,7 +440,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -478,7 +478,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -505,7 +505,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -521,7 +521,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -548,7 +548,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -586,7 +586,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -613,7 +613,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -629,7 +629,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -656,7 +656,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -694,7 +694,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -721,7 +721,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -737,7 +737,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -764,7 +764,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -802,7 +802,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -829,7 +829,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -856,7 +856,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -872,7 +872,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -919,7 +919,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
@@ -936,7 +936,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -962,7 +962,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -989,7 +989,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1027,7 +1027,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
@@ -1044,7 +1044,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1070,7 +1070,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1097,7 +1097,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1135,7 +1135,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1161,7 +1161,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1178,7 +1178,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1205,7 +1205,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1243,7 +1243,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1269,7 +1269,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1286,7 +1286,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1313,7 +1313,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1351,7 +1351,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1377,7 +1377,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1394,7 +1394,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1421,7 +1421,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1459,7 +1459,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1485,7 +1485,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1502,7 +1502,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1529,7 +1529,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1567,7 +1567,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1593,7 +1593,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1610,7 +1610,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1637,7 +1637,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1675,7 +1675,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1702,7 +1702,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1728,7 +1728,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1766,7 +1766,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1793,7 +1793,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1820,7 +1820,7 @@
                     "too_short_in_station": false,
                     "skipped_station": true,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -1836,7 +1836,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1874,7 +1874,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1901,7 +1901,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1927,7 +1927,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": true,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -1965,7 +1965,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -1992,7 +1992,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2018,7 +2018,7 @@
                     "too_short_in_station": true,
                     "skipped_station": false,
                     "wrong_station": true,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         }
@@ -2056,7 +2056,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2083,7 +2083,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2130,7 +2130,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2157,7 +2157,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2204,7 +2204,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
@@ -2231,7 +2231,7 @@
                     "too_short_in_station": false,
                     "skipped_station": false,
                     "wrong_station": false,
-                    "missing_qr_code": true
+                    "missing_qr_code": false
                 }
             }
         },
