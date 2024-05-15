@@ -72,7 +72,8 @@ class MachineStatusGenerator:
                                                                                                                            "cumulative_throughput_time": 0,
                                                                                                                            "too_long_in_station": False,
                                                                                                                            "station_skipped": False,
-                                                                                                                           "throughput_time_too_low": False}
+                                                                                                                           "throughput_time_too_low": False,
+                                                                                                                           "wrong_station": False}
                 
     def get_steps_for_order(self, pallet_id):
         steps = []
@@ -140,9 +141,6 @@ class MachineStatusGenerator:
                 if pallet_prev_station[pallet_id] == None:
                     continue
                 current_station_name = self.station_number_name_mapping[pallet_prev_station[pallet_id]]
-                print(current_station_name)
-                print(pallet_id)
-                print(self.status[time_stamp][current_station_name]["pallets"].keys())
                 if pallet_id in self.status[time_stamp][current_station_name]["pallets"].keys():
                     print("skip " + pallet_id)
                     continue
@@ -154,21 +152,53 @@ class MachineStatusGenerator:
                     pallet_prev_station[pallet_id] = next_station_number
                 else:
                     #add expecting pallet
-                    print("expecting pallet")
                     steps = self.get_steps_for_order(pallet_id)
                     self.status[time_stamp][next_station_name]["pallets"][pallet_id] = {"pallet_id": pallet_id,
-                                                                                                                           "expecting_in_station": str(time_stamp),
-                                                                                                                           "in_station_since": 0,
-                                                                                                                           "needed_stations": steps,
-                                                                                                                           "status": "incoming",
-                                                                                                                           "cumulative_throughput_time": 0,
-                                                                                                                           "too_long_in_station": False,
-                                                                                                                           "station_skipped": False,
-                                                                                                                           "throughput_time_too_low": False}
+                                                                                        "expecting_in_station": str(time_stamp),
+                                                                                        "in_station_since": 0,
+                                                                                        "needed_stations": steps,
+                                                                                        "status": "incoming",
+                                                                                        "cumulative_throughput_time": 0,
+                                                                                        "too_long_in_station": False,
+                                                                                        "station_skipped": False,
+                                                                                        "throughput_time_too_low": False,
+                                                                                        "wrong_station": False}
                 
             self.prev_start_time = self.current_start_time
             self.prev_end_time = self.current_time_step_end
             self.current_start_time = self.current_time_step_end
+
+    def update_time_status(self):
+        self.current_start_time = self.START_TIME
+        self.current_end_time = None
+        pallet_visited_stations = {}
+        while self.current_start_time < self.END_TIME:
+            self.current_time_step_end = self.current_start_time + datetime.timedelta(seconds=10)
+            time_stamp = self.current_start_time.strftime(self.TIME_FORMAT) + '-' + self.current_time_step_end.strftime(self.TIME_FORMAT)
+            print(self.current_start_time.strftime(self.TIME_FORMAT), " ", self.current_time_step_end.strftime(self.TIME_FORMAT))
+            
+            for station_name in self.status[time_stamp].keys():
+                station_processing_time = self.get_machine_processing_time(station_name)
+
+                for pallet_id in self.status[time_stamp][station_name]["pallets"].keys():
+                    if self.status[time_stamp][station_name]["pallets"][pallet_id]["status"] != "processing":
+                        continue
+                    current_time = datetime.datetime.strptime(time_stamp.split("-")[0], self.TIME_FORMAT)
+                    processing_since = datetime.datetime.strptime(self.status[time_stamp][station_name]["pallets"][pallet_id]["in_station_since"].split(" ")[1], self.TIME_FORMAT)
+                    cum_processing_time = abs((current_time - processing_since).total_seconds())
+                    over_avg_processing_time = int(cum_processing_time) > int(station_processing_time.split(":")[2])
+                    under_avg_processing_time = int(cum_processing_time) < int(station_processing_time.split(":")[2])
+                    self.status[time_stamp][station_name]["pallets"][pallet_id]["too_long_in_station"] = over_avg_processing_time
+                    self.status[time_stamp][station_name]["pallets"][pallet_id]["throughput_time_too_low"] = under_avg_processing_time
+            self.prev_start_time = self.current_start_time
+            self.prev_end_time = self.current_time_step_end
+            self.current_start_time = self.current_time_step_end
+    
+    def get_machine_processing_time(self, name):
+        for i, row in self.MACHINE_DATA.iterrows():
+            if row["MachineName"] == name:
+                return row["avg_throughput_time(hh:mm:ss)"]        
+        return None
     
     def write_status_to_file(self):
         with open(self.OUTPUT_DATA_PATH, 'w') as f:
@@ -185,4 +215,5 @@ generator = MachineStatusGenerator()
 generator.generate_machine_status_per_time_step()
 generator.add_expecting_pallets()
 generator.detect_skipped_stations()
+generator.update_time_status()
 generator.write_status_to_file()
