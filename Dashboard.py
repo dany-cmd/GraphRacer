@@ -16,16 +16,19 @@ st.session_state['pallet_id'] = 'A_2663577'
 st.session_state['data'] = ''
 
 
+st.session_state['time'] = "00:00:40-00:00:50"
+
+
 with open(json_data_path, "r") as f:
     x = json.load(f)
 temp_data = []
-for time in x:
-    for machine in x[time]:
-        for pallet_id, pallet_data in x[time][machine]['pallets'].items():
+for pal_time in x:
+    for machine in x[pal_time]:
+        for pallet_id, pallet_data in x[st.session_state['time']][machine]['pallets'].items():
             temp_data.append({
                 "MachineName": machine,
-                "StationNumber": x[time][machine]['StationNumber'],
-                "Time": time,
+                "StationNumber": x[st.session_state['time']][machine]['StationNumber'],
+                "Time": pal_time,
                 **pallet_data
             })
 df = pd.DataFrame(temp_data)
@@ -118,7 +121,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.session_state['time'] = "00:00:40-00:00:50"
 
 
 def save_data(data):
@@ -159,12 +161,18 @@ def kanban_board(data):
             # print(machineName, ": ", data[time][st.session_state['machine']]["num_errors"])
             # print(time)
             # print(data[time][st.session_state['machine']])
+
+            time = st.session_state['time']
+
+            print(machineName, ": ", data[time][st.session_state['machine']]["num_errors"])
+            print(st.session_state['time'])
+            print(data[time][st.session_state['machine']])
             if data[time][st.session_state['machine']]["num_errors"] != 0:
                 with stylable_container(
                                 "red", 
                                 css_styles="""
                                 button {
-                                    background-color: white;
+                                    background-color: red;
                                     color: black;
                                 }""",
                             ):
@@ -175,7 +183,7 @@ def kanban_board(data):
                                     "yellow",
                                     css_styles="""
                                     button {
-                                        background-color: white;
+                                        background-color: yellow;
                                         color: black;
                                     }""",
                                 ):
@@ -185,7 +193,7 @@ def kanban_board(data):
                                     "green",
                                     css_styles="""
                                     button {
-                                        background-color: white;
+                                        background-color: green;
                                         color: black;
                                     }""",
                                 ):
@@ -315,7 +323,7 @@ def pallet_board(time, machine, pallet_id):
     data = load_data()
 
     st.write("## Pallet ID: ", pallet_id)
-    st.write(time)
+    st.write(st.session_state['time'])
     st.write(machine)
     # st.write()
     # print("test !!! ", data[time][machine])
@@ -328,6 +336,7 @@ def pallet_board(time, machine, pallet_id):
 
 def main():
     st.title("Dashboard")
+    st.write("Current Time: " + st.session_state['time'])
     # st.sidebar.header("Options")
     # option = st.sidebar.selectbox("Select Option", ["View Board", "Add Task"])
     

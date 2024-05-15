@@ -10,6 +10,9 @@ pallet_id = st.session_state['pallet_id']
 processing_pallets = st.session_state['processing_pallets']
 incoming_pallets =  st.session_state['incoming_pallets']
 
+
+st.title("State Management")
+
 # st.write(f"## ", station["MachineName"])
 statuses = st.columns(2)
 # html += f"<div class=wrapper_status>"
