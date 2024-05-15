@@ -1,0 +1,33 @@
+{
+    "Stations": [
+        {
+            "station_name": "Station 1",
+            "status": {
+                "Incoming": [
+                    "#837"
+                ],
+                "Processing": []
+            }
+        },
+        {
+            "station_name": "Station 2",
+            "status": {
+                "Incoming": [
+                    "#125",
+                    "#926"
+                ],
+                "Processing": []
+            }
+        },
+        {
+            "station_name": "Station 3",
+            "status": {
+                "Incoming": [],
+                "Processing": [
+                    "#172",
+                    "#124"
+                ]
+            }
+        }
+    ]
+}
