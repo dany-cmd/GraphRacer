@@ -10,8 +10,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:04",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:04",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -20,9 +20,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -65,8 +66,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:04",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:04",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -75,9 +76,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -120,8 +122,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:29",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:29",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -129,9 +131,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -145,8 +148,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:26",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:26",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -155,9 +158,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -191,8 +195,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:29",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:29",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -200,14 +204,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:31",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:31",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -216,9 +221,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -241,8 +247,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": "00:00:30-00:00:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:00:30-00:00:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -251,9 +257,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -278,8 +285,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:29",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:29",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -287,14 +294,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:31",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:31",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -303,9 +311,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -328,8 +337,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": "00:00:40-00:00:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:00:40-00:00:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -338,9 +347,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -374,8 +384,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -384,14 +394,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": "00:00:50-00:01:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:00:50-00:01:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -399,9 +410,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -415,8 +427,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:57",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:57",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -425,9 +437,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -452,8 +465,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:01",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:01",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -462,9 +475,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -478,8 +492,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -488,14 +502,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:02",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:02",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -503,9 +518,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -519,8 +535,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:57",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:57",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -529,9 +545,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -556,8 +573,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:01",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:01",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -566,9 +583,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -582,8 +600,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -592,14 +610,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:02",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:02",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -607,9 +626,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -623,8 +643,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:57",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:57",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -633,9 +653,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -660,8 +681,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:01",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:01",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -670,9 +691,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -686,8 +708,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -696,14 +718,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:02",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:02",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -711,9 +734,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -727,8 +751,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:57",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:57",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -737,9 +761,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -764,8 +789,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:01",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:01",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -774,9 +799,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -790,8 +816,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -800,9 +826,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -816,8 +843,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:57",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:57",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -826,14 +853,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": "00:01:30-00:01:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:01:30-00:01:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -841,9 +869,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -877,8 +906,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -887,14 +916,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:01:40-00:01:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:01:40-00:01:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -903,9 +933,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -919,8 +950,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -928,9 +959,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -944,8 +976,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -954,9 +986,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -981,8 +1014,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:00:58",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:00:58",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -991,14 +1024,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:01:50-00:02:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:01:50-00:02:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1007,9 +1041,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1023,8 +1058,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1032,9 +1067,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1048,8 +1084,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1058,9 +1094,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1085,8 +1122,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:00-00:02:10",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:00-00:02:10",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1095,9 +1132,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1111,8 +1149,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1120,14 +1158,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:00-00:02:10",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:00-00:02:10",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1136,9 +1175,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1152,8 +1192,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1162,9 +1202,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1189,8 +1230,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:10-00:02:20",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:10-00:02:20",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1199,9 +1240,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1215,8 +1257,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1224,14 +1266,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:10-00:02:20",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:10-00:02:20",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1240,9 +1283,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1256,8 +1300,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1266,9 +1310,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1293,8 +1338,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:20-00:02:30",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:20-00:02:30",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1303,9 +1348,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1319,8 +1365,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1328,14 +1374,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:20-00:02:30",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:20-00:02:30",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1344,9 +1391,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1360,8 +1408,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1370,9 +1418,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": false
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1397,8 +1446,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:30-00:02:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:30-00:02:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1407,9 +1456,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1423,8 +1473,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1432,14 +1482,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:30-00:02:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:30-00:02:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1448,9 +1499,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1464,8 +1516,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1474,9 +1526,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1501,8 +1554,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:40-00:02:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:40-00:02:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1511,9 +1564,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1527,8 +1581,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:44",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:44",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1536,14 +1590,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": true,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:40-00:02:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:40-00:02:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1552,9 +1607,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1568,8 +1624,8 @@
             "pallets": {
                 "A_2663577": {
                     "pallet_id": "A_2663577",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:01:45",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:01:45",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1578,9 +1634,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1605,8 +1662,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:02:50-00:03:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:50-00:03:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1615,9 +1672,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1631,8 +1689,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:02:50-00:03:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:50-00:03:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1641,9 +1699,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1657,8 +1716,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": "00:02:50-00:03:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:02:50-00:03:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1666,9 +1725,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1693,8 +1753,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:00-00:03:10",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:00-00:03:10",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1703,9 +1763,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1719,8 +1780,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:00-00:03:10",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:00-00:03:10",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1729,9 +1790,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1745,8 +1807,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:03:03",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:03:03",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1755,14 +1817,15 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": true,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": true,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": "00:03:00-00:03:10",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:00-00:03:10",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1770,9 +1833,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1797,8 +1861,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:10-00:03:20",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:10-00:03:20",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1807,9 +1871,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1823,8 +1888,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:10-00:03:20",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:10-00:03:20",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1833,9 +1898,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1849,8 +1915,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:03:13",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:03:13",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1858,9 +1924,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": true
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": true,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1885,8 +1952,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:20-00:03:30",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:20-00:03:30",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1895,9 +1962,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1911,8 +1979,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:20-00:03:30",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:20-00:03:30",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1921,9 +1989,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1937,8 +2006,8 @@
             "pallets": {
                 "B_2663588": {
                     "pallet_id": "B_2663588",
-                    "expecting_in_station": 0,
-                    "in_station_since": "1900-01-01 00:03:13",
+                    "expecting_in_station_since": null,
+                    "in_station_since": "00:03:13",
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1946,9 +2015,10 @@
                     ],
                     "status": "processing",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": true,
-                    "wrong_station": true
+                    "too_short_in_station": true,
+                    "skipped_station": false,
+                    "wrong_station": true,
+                    "missing_qr_code": true
                 }
             }
         }
@@ -1973,8 +2043,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:30-00:03:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:30-00:03:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -1983,9 +2053,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -1999,8 +2070,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:30-00:03:40",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:30-00:03:40",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -2009,9 +2080,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -2045,8 +2117,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:40-00:03:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:40-00:03:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -2055,9 +2127,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -2071,8 +2144,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:40-00:03:50",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:40-00:03:50",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -2081,9 +2154,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -2117,8 +2191,8 @@
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
-                    "expecting_in_station": "00:03:50-00:04:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:50-00:04:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -2127,9 +2201,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
@@ -2143,8 +2218,8 @@
             "pallets": {
                 "C_2663599": {
                     "pallet_id": "C_2663599",
-                    "expecting_in_station": "00:03:50-00:04:00",
-                    "in_station_since": 0,
+                    "expecting_in_station_since": "00:03:50-00:04:00",
+                    "in_station_since": null,
                     "needed_stations": [
                         "Milling",
                         "Polishing",
@@ -2153,9 +2228,10 @@
                     ],
                     "status": "incoming",
                     "too_long_in_station": false,
-                    "station_skipped": false,
-                    "throughput_time_too_low": false,
-                    "wrong_station": false
+                    "too_short_in_station": false,
+                    "skipped_station": false,
+                    "wrong_station": false,
+                    "missing_qr_code": true
                 }
             }
         },
