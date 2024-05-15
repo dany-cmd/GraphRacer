@@ -175,7 +175,7 @@ class MachineStatusGenerator:
                 json.dump(self.status, f)
 
     def get_filtered_tracking_status(self, start, end):
-        mask = ((start < self.TRACKING_DATA["StartTime"]) & (self.TRACKING_DATA["StartTime"] <= end)) | ((start < self.TRACKING_DATA["EndTime"]) & (self.TRACKING_DATA["EndTime"] <= end))
+        mask = ((start < self.TRACKING_DATA["StartTime"]) & (self.TRACKING_DATA["StartTime"] <= end)) | ((start < self.TRACKING_DATA["EndTime"]) & (self.TRACKING_DATA["EndTime"] <= end)) | ((self.TRACKING_DATA["StartTime"] < start) & (self.TRACKING_DATA["EndTime"] > start))
         return self.TRACKING_DATA.loc[mask]
     
     def check_all_pallets_unique_in_all_stations(self):
