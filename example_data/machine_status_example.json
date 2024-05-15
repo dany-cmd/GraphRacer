@@ -3,9 +3,9 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -19,10 +19,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -74,10 +74,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -128,19 +128,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -154,10 +154,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -184,9 +184,9 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 2,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 2,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -199,10 +199,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -215,10 +215,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -250,10 +250,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -286,10 +286,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -302,10 +302,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -337,10 +337,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -367,9 +367,9 @@
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -383,10 +383,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -398,19 +398,19 @@
                         "Assembly"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -424,10 +424,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -445,9 +445,9 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "D_2663612": {
@@ -461,19 +461,19 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 2,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 2,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -487,10 +487,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -502,19 +502,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -528,10 +528,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -565,19 +565,19 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -591,10 +591,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -606,19 +606,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -632,10 +632,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -653,9 +653,9 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "D_2663612": {
@@ -669,19 +669,19 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -695,10 +695,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -710,19 +710,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -736,10 +736,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
@@ -757,9 +757,9 @@
         "Milling": {
             "StationNumber": 1,
             "avg_throughput_time": "00:00:15",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "D_2663612": {
@@ -773,19 +773,19 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -799,19 +799,19 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -825,10 +825,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -840,10 +840,10 @@
                         "Assembly"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -870,9 +870,9 @@
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -886,10 +886,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
@@ -902,19 +902,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -927,19 +927,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -953,10 +953,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         }
@@ -974,9 +974,9 @@
         "Polishing": {
             "StationNumber": 2,
             "avg_throughput_time": "00:00:20",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "C_2663599": {
@@ -990,10 +990,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "D_2663612": {
                     "pallet_id": "D_2663612",
@@ -1006,19 +1006,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1031,19 +1031,19 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -1057,10 +1057,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         }
@@ -1094,19 +1094,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1119,10 +1119,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1135,19 +1135,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -1161,10 +1161,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         }
@@ -1198,19 +1198,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1223,10 +1223,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1239,19 +1239,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -1265,10 +1265,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         }
@@ -1302,10 +1302,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1327,10 +1327,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1343,19 +1343,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "A_2663577": {
@@ -1369,10 +1369,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 }
             }
         }
@@ -1406,19 +1406,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1431,10 +1431,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1447,10 +1447,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1473,10 +1473,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         }
@@ -1510,19 +1510,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Assembly": {
             "StationNumber": 3,
             "avg_throughput_time": "00:00:45",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1535,10 +1535,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
-                    "too_long_in_station": false,
+                    "too_long_in_station": true,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 },
                 "C_2663599": {
                     "pallet_id": "C_2663599",
@@ -1551,10 +1551,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1577,10 +1577,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         }
@@ -1614,10 +1614,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1640,10 +1640,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1665,10 +1665,10 @@
                         "Assembly"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         }
@@ -1702,10 +1702,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1728,20 +1728,20 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
-            "num_errors": 0,
-            "num_pallets_with_warnings": 0,
-            "num_pallets_with_errors": 0,
+            "num_warnings": 1,
+            "num_errors": 1,
+            "num_pallets_with_warnings": 1,
+            "num_pallets_with_errors": 1,
             "pallets": {
                 "D_2663612": {
                     "pallet_id": "D_2663612",
@@ -1754,10 +1754,10 @@
                         "Conservation"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": true,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": false
                 },
                 "B_2663588": {
                     "pallet_id": "B_2663588",
@@ -1769,10 +1769,10 @@
                         "Assembly"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         }
@@ -1806,10 +1806,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1832,19 +1832,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1857,10 +1857,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": true
                 }
             }
         }
@@ -1894,10 +1894,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -1920,19 +1920,19 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
         "Conservation": {
             "StationNumber": 4,
             "avg_throughput_time": "00:00:55",
-            "num_warnings": 0,
+            "num_warnings": 1,
             "num_errors": 0,
-            "num_pallets_with_warnings": 0,
+            "num_pallets_with_warnings": 1,
             "num_pallets_with_errors": 0,
             "pallets": {
                 "B_2663588": {
@@ -1945,10 +1945,10 @@
                         "Assembly"
                     ],
                     "status": "processing",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": true,
+                    "wrong_station": true
                 }
             }
         }
@@ -1982,10 +1982,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -2008,10 +2008,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -2054,10 +2054,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -2080,10 +2080,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -2126,10 +2126,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
@@ -2152,10 +2152,10 @@
                         "Conservation"
                     ],
                     "status": "incoming",
-                    "cumulative_throughput_time": 0,
                     "too_long_in_station": false,
                     "station_skipped": false,
-                    "throughput_time_too_low": false
+                    "throughput_time_too_low": false,
+                    "wrong_station": false
                 }
             }
         },
