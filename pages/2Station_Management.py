@@ -11,7 +11,8 @@ processing_pallets = st.session_state['processing_pallets']
 incoming_pallets =  st.session_state['incoming_pallets']
 
 
-st.title("State Management")
+st.title("Station Management")
+st.write("## ", machine)
 
 # st.write(f"## ", station["MachineName"])
 statuses = st.columns(2)

@@ -17,6 +17,8 @@ st.session_state['data'] = ''
 
 if 'box_value' not in st.session_state:
     st.session_state['box_value'] = 0
+if 'time' not in st.session_state:
+    st.session_state['time'] = "00:00:00-00:00:10"
       
 
 
